@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="box">
+        <div id="title">Logowanie</div>
+
+        <input type="text" id="f1" placeholder="Username">
+        <input type="password" id="f2" placeholder="password">
+        <button type="submit" id="btn" onclick="loginIn()">Login</button>
+        <input type="button" id="showpass" value="Show Password" onclick="tooglePass()"></div>
+        <script>
+            function loginIn() {
+                
+                var passwordField = document.getElementById("f2");
+                var loginFiled = document.getElementById("f1");
+                
+                if(loginFiled.value !== "" && passwordField.value !== ""){
+                    alert("Zalogowano!")
+                }
+                if(loginFiled.value === "" && passwordField.value === ""){
+                    alert("Nie wprowadzono nazwy użytkownika lub hasła")
+                    
+                }
+            }
+            function tooglePass() {
+                var pass = document.getElementById("f2");
+                var btn = document.getElementById("showpass");
+                if(pass.type === "password"){
+                    pass.type = "text";
+                    btn.value = "Hide Password";
+                }
+                else{
+                    pass.type = "password";
+                    btn.value = "Show Password";
+                }
+            }
+        </script>
+        
+    </div>
+</body>
+</html>
