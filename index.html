@@ -1,47 +1,30 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Discord Bot Hosting</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="keywords" content="hosting, discord, bot, bot hosting, tani hosting discord,hosting botów, hosting botów discord">
 </head>
 <body>
-    <div id="box">
-        <div id="title">Logowanie</div>
+    <div id="container">
+        <div id="nav">
+            <div id="n1">
+                <a href="">Bot Hosting</a>
+            </div>
 
-        <input type="text" id="f1" placeholder="Username">
-        <input type="password" id="f2" placeholder="password">
-        <button type="submit" id="btn" onclick="loginIn()">Login</button>
-        <input type="button" id="showpass" value="Show Password" onclick="tooglePass()"></div>
-        <script>
-            function loginIn() {
-                
-                var passwordField = document.getElementById("f2");
-                var loginFiled = document.getElementById("f1");
-                
-                if(loginFiled.value !== "" && passwordField.value !== ""){
-                    alert("Zalogowano!")
-                }
-                if(loginFiled.value === "" || passwordField.value === ""){
-                    alert("Nie wprowadzono nazwy użytkownika lub hasła")
-                    
-                }
-            }
-            function tooglePass() {
-                var pass = document.getElementById("f2");
-                var btn = document.getElementById("showpass");
-                if(pass.type === "password"){
-                    pass.type = "text";
-                    btn.value = "Hide Password";
-                }
-                else{
-                    pass.type = "password";
-                    btn.value = "Show Password";
-                }
-            }
-        </script>
-        
+            <div id="n2">
+                <a href="">Oferta</a>
+            </div>
+
+            <div id="n3">
+                <a href="">Regulamin</a></div>
+
+            <div id="n4"><a href="/login.html">Panel</a></div>
+        </div>
     </div>
+    <div id="footer">&copy;BotHosting - Wszelkie prawa zastrzeżone</div>
+    <input type="button" value="Pobierz przykładowy plik bota!"><a href="/files/basic_bot.py" download="basic_bot.py"></a></input>
 </body>
 </html>
