@@ -1,0 +1,54 @@
+@media only screen and (max-width: 500px){
+    #back{
+        background-color: black;
+        color: white;
+        width: 100px;
+        height: 25px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    #loginform{
+        width: 400px;
+        height: 400px;
+        background-color: wheat;
+        border-radius: 20px;
+        margin-top: 120px;
+    }
+    #uname{
+        border: none;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+    #pass{
+        border: none;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #loginbtn{
+        border: none;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #text{
+        text-align: center;
+        font-size: 50px
+    }
+    body{
+        background-color: rgb(240, 229, 78);
+    }
+
+}
